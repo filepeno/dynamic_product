@@ -21,7 +21,7 @@ body {
   padding: 1rem;
 }
 
-header a {
+a {
   text-decoration: none;
 }
 
@@ -35,7 +35,68 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+main {
+  margin: 5rem 0;
+}
+
+.heading {
+  text-align: left;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
 /* Category */
+
 .categoryList {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
+  grid-gap: 2.4rem;
+}
+
+.categoryItem {
+  display: flex;
+  width: 20rem;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.categoryItem a:link {
+  color: white;
+}
+
+.categoryItem a:hover {
+  color: white;
+}
+
+.categoryItem a:visited {
+  color: white;
+}
+
+#accessoriesBox {
+  background-color: #85cbd1;
+}
+
+#apparelBox {
+  background-color: #838cdb;
+}
+
+#footwearBox {
+  background-color: #cca2f0;
+}
+
+#freeItemsBox {
+  background-color: #9c77b7;
+}
+
+#personalCareBox {
+  background-color: #4b4bd5;
+}
+
+#sportingGoodsBox {
+  background-color: #c045d6;
 }
