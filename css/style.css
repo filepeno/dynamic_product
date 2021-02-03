@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2rem 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  /* margin: 2rem; */
+}
+
+.mainNav a {
+  padding: 1rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#logo {
+  margin-right: auto;
+  justify-self: flex-start;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Category */
+.categoryList {
+  display: grid;
+}
