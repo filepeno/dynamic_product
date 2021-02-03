@@ -199,3 +199,24 @@ main {
 .productList article.onSale .discounted {
   display: inline;
 }
+
+/* product */
+
+.mainProduct {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2.4rem;
+}
+
+.imgL {
+  grid-column: 1 / 2;
+}
+
+.imgS {
+  display: none;
+}
+
+.info {
+  grid-column: 2 / 3;
+  margin-top: 3rem;
+}
