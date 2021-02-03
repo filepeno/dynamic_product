@@ -100,3 +100,11 @@ main {
 #sportingGoodsBox {
   background-color: #c045d6;
 }
+
+/* Productlist */
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
+  grid-gap: 2.4rem;
+}
