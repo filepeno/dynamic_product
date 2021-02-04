@@ -53,6 +53,19 @@ main {
   body {
     margin: 3rem 4rem;
   }
+
+  .mainNav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    padding: 0 1rem 0 0;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+  }
 }
 
 /* Category */
@@ -235,7 +248,7 @@ article.onSale .discounted {
   grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
-  margin-top: 00.5rem;
+  margin-top: 0.5rem;
 }
 
 .info > * {
@@ -278,7 +291,17 @@ article.onSale .discounted {
 }
 
 @media screen and (max-width: 1100px) {
-  .extra-info p {
-    font-size: 0.5rem;
+  .info p {
+    font-size: 0.8rem;
+  }
+
+  .imgL {
+    grid-column: 1/-1;
+  }
+
+  .info {
+    grid-area: 2 / 1 / 3 / -1;
+    max-width: 500px;
+    justify-self: center;
   }
 }
