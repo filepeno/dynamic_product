@@ -78,6 +78,14 @@ ul.breadcrumb li + li:before {
   nav {
     margin-top: 0.5rem;
   }
+
+  main {
+    margin-top: 2rem;
+  }
+
+  ul.breadcrumb {
+    font-size: 0.8rem;
+  }
 }
 
 /* Category */
