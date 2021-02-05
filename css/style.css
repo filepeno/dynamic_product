@@ -53,12 +53,17 @@ ul.breadcrumb {
   display: flex;
   list-style: none;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 ul.breadcrumb li + li:before {
-  padding: 20px;
+  padding-right: 15px;
   color: black;
   content: ">";
+}
+
+ul.breadcrumb li {
+  padding-right: 15px;
 }
 
 @media screen and (max-width: 700px) {
@@ -84,7 +89,7 @@ ul.breadcrumb li + li:before {
   }
 
   ul.breadcrumb {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -302,7 +307,7 @@ article.onSale .discounted {
 
 .extra_info {
   margin-top: 3rem;
-  background-color: #c6c6ed;
+  background-color: #a9a9e2;
   color: white;
 }
 

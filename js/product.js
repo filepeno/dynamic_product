@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products/2123";
+const url = "https://kea-alt-del.dk/t7/api/products/1163";
 // fetch the data
 fetch(url)
   .then((res) => res.json())
@@ -17,8 +17,7 @@ function showProduct(product) {
   document.querySelector(".extra_info .category").textContent =
     product.category;
   document.querySelector(".colorInfo p").textContent = product.basecolour;
-  document.querySelector(".descriptionInfo p").textContent =
-    product.description;
+  document.querySelector(".descriptionInfo p").innerHTML = product.description;
   document.querySelector(
     "img.imgL"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
