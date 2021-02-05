@@ -7,10 +7,15 @@ fetch(url)
 function showProduct(product) {
   console.log(product);
   document.querySelector(".info .brand").textContent = product.brandname;
-  document.querySelector(".item_title").textContent =
+  document.querySelector(".breadcrumb .item_title").textContent =
+    product.productdisplayname;
+  document.querySelector(".info .item_title").textContent =
     product.productdisplayname;
   document.querySelector(".info .price h3").textContent = product.price;
-  document.querySelector(".category").textContent = product.category;
+  document.querySelector(".breadcrumb .category").textContent =
+    product.category;
+  document.querySelector(".extra_info .category").textContent =
+    product.category;
   document.querySelector(".colorInfo p").textContent = product.basecolour;
   document.querySelector(".descriptionInfo p").textContent =
     product.description;
