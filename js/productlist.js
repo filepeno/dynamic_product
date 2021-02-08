@@ -40,10 +40,26 @@ function handleProductList(data) {
 </template> */
 
 function showProduct(item) {
+  console.log(item);
   //grab template
-  const template = document.querySelector("#templateProduct");
+  const template = document.querySelector("#templateProduct").content;
   //clone it
+  const copy = template.cloneNode(true);
   //change content
+  // copy.querySelector(".img").src = `${item.productdisplayname}`;
+  copy.querySelector(".brand").textContent = `${item.brandname}`;
+  copy.querySelector(".item_title").textContent = `${item.productdisplayname}`;
+  copy.querySelector(".price h3").textContent = `${item.price}`;
+
+  if (item.soldout) {
+    copy.querySelector("article").classList.add("soldOut");
+  }
+
+  if (item.discount) {
+    copy.querySelector("article").classList.add("onSale");
+  }
   //grab parent
+  const parent = document.querySelector(".productList");
   //append
+  parent.appendChild(copy);
 }
