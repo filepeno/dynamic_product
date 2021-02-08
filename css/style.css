@@ -153,8 +153,7 @@ ul.breadcrumb li {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 20rem));
   grid-template-rows: 1fr;
-  column-gap: 2.4rem;
-  row-gap: 3.4rem;
+  grid-gap: 3.4rem 2.4rem;
 }
 
 .smallProduct {
@@ -214,13 +213,11 @@ article.soldOut img {
   opacity: 0.4;
 }
 
-article.onSale::after {
-  content: "-30%";
-  position: absolute;
+.discount {
   background-color: #ff6565;
   color: white;
-  padding: 1rem;
-  transform: translate(0, 5px);
+  padding: 0.5rem;
+  /* margin-right: 4rem; */
 }
 
 article.onSale .discounted span {
@@ -250,7 +247,8 @@ article.onSale .price > h3 {
 }
 
 article.onSale .discounted {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* product */
