@@ -46,7 +46,9 @@ function showProduct(item) {
   //clone it
   const copy = template.cloneNode(true);
   //change content
-  // copy.querySelector(".img").src = `${item.productdisplayname}`;
+  copy.querySelector(
+    "img"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${item.id}.webp`;
   copy.querySelector(".brand").textContent = `${item.brandname}`;
   copy.querySelector(".item_title").textContent = `${item.productdisplayname}`;
   copy.querySelector(".price").textContent = `${item.price}`;
@@ -58,6 +60,9 @@ function showProduct(item) {
   if (item.discount) {
     copy.querySelector("article").classList.add("onSale");
     copy.querySelector(".discount").textContent = `-${item.discount}%`;
+    copy.querySelector(".discounted span").textContent = Math.round(
+      item.price * (1 - item.discount / 100)
+    );
   }
   //grab parent
   const parent = document.querySelector(".productList");
