@@ -220,13 +220,18 @@ article.soldOut img {
   /* margin-right: 4rem; */
 }
 
+.price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 article.onSale .discounted span {
   color: #ff3b3b;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.price_area .price span {
+.price_area p :first-child {
   display: none;
 }
 
@@ -234,16 +239,18 @@ article.onSale .discounted span {
   display: none;
 }
 
-article.onSale .price span {
+article.onSale .price_area p :first-child {
   display: inline;
+}
+
+article.onSale .price_area > :first-child {
+  font-size: 0.9rem;
+  opacity: 70%;
 }
 
 article.onSale .price {
   font-size: 0.9rem;
-}
-
-article.onSale .price > h3 {
-  font-size: 0.9rem;
+  font-weight: normal;
 }
 
 article.onSale .discounted {

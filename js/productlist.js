@@ -49,7 +49,7 @@ function showProduct(item) {
   // copy.querySelector(".img").src = `${item.productdisplayname}`;
   copy.querySelector(".brand").textContent = `${item.brandname}`;
   copy.querySelector(".item_title").textContent = `${item.productdisplayname}`;
-  copy.querySelector(".price h3").textContent = `${item.price}`;
+  copy.querySelector(".price").textContent = `${item.price}`;
 
   if (item.soldout) {
     copy.querySelector("article").classList.add("soldOut");
@@ -57,6 +57,7 @@ function showProduct(item) {
 
   if (item.discount) {
     copy.querySelector("article").classList.add("onSale");
+    copy.querySelector(".discount").textContent = `-${item.discount}%`;
   }
   //grab parent
   const parent = document.querySelector(".productList");
