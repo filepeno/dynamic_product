@@ -10,7 +10,7 @@ fetch(url)
 
 function handleProductList(data) {
   console.log(data);
-  data.forEach(showProduct);
+  data.forEach(showItem);
 }
 
 /* <template id="templateProduct">
@@ -39,7 +39,7 @@ function handleProductList(data) {
   </article>
 </template> */
 
-function showProduct(item) {
+function showItem(item) {
   console.log(item);
   //grab template
   const template = document.querySelector("#templateProduct").content;
@@ -52,6 +52,7 @@ function showProduct(item) {
   copy.querySelector(".brand").textContent = `${item.brandname}`;
   copy.querySelector(".item_title").textContent = `${item.productdisplayname}`;
   copy.querySelector(".price").textContent = `${item.price}`;
+  copy.querySelector(".smallProduct > a").href = `product.html?id=${item.id}`;
 
   if (item.soldout) {
     copy.querySelector("article").classList.add("soldOut");
