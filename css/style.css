@@ -295,24 +295,37 @@ article.onSale .discounted {
   flex-direction: column;
 }
 
-.sizeAndPrice .price_area {
+.info .price_area {
   margin: 0;
+  justify-content: flex-end;
 }
 
-.sizeAndPrice .discount {
+.info .discount {
+  display: none;
+}
+
+article.onSale .info .discount {
+  display: block;
   align-self: center;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .info .discountAndPrice {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: end;
   margin-top: 2rem;
-  /* justify-self: flex-end; */
 }
 
-.productWrapper button {
+article.onSale .info .discountAndPrice {
+  justify-content: space-between;
+}
+
+article.onSale .info .discounted {
+  justify-content: end;
+}
+
+.info button {
   background-color: black;
   color: white;
   margin-top: 1rem;
