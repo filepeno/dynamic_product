@@ -21,7 +21,8 @@ function showProduct(product) {
   document.querySelector(".extra_info .category").textContent =
     product.category;
   document.querySelector(".colorInfo p").textContent = product.basecolour;
-  document.querySelector(".descriptionInfo p").innerHTML = product.description;
+  document.querySelector(".descriptionInfo .descriptionText").innerHTML =
+    product.description;
   document.querySelector(
     "img.imgL"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;

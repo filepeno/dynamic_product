@@ -344,7 +344,11 @@ article.onSale .info .discounted {
 }
 
 .extra_info > * {
-  margin: 2.5rem;
+  margin: 2rem;
+}
+
+.extra_info p {
+  margin: 0.5rem 0 0 1rem;
 }
 
 @media screen and (max-width: 1100px) {
