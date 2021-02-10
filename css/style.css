@@ -217,6 +217,7 @@ article.soldOut img {
   background-color: #ff6565;
   color: white;
   padding: 0.5rem;
+  align-self: center;
   /* margin-right: 4rem; */
 }
 
@@ -291,23 +292,36 @@ article.onSale .discounted {
 
 .sizeAndPrice {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.info .price_area {
-  margin-top: 3rem;
-  justify-self: flex-end;
+.sizeAndPrice .price_area {
+  margin: 0;
+}
+
+.sizeAndPrice .discount {
+  align-self: center;
+  padding: 1rem;
+}
+
+.info .discountAndPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  /* justify-self: flex-end; */
 }
 
 .productWrapper button {
   background-color: black;
   color: white;
   margin-top: 1rem;
-  width: 100%;
+  width: 50%;
   border-radius: 1rem;
   padding: 0.5rem 2rem;
   font-size: 0.7rem;
+  text-align: center;
+  align-self: flex-end;
 }
 
 .extra_info {
