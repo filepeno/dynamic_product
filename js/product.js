@@ -11,7 +11,7 @@ function showProduct(product) {
     product.productdisplayname;
   document.querySelector(".info .item_title").textContent =
     product.productdisplayname;
-  document.querySelector(".info .price h3").textContent = product.price;
+  document.querySelector(".info .price").textContent = product.price;
   document.querySelector(".breadcrumb .category").textContent =
     product.category;
   document.querySelector(".extra_info .category").textContent =

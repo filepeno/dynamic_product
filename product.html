@@ -21,7 +21,7 @@
       </nav>
     </header>
     <main>
-      <article class="productWrapper">
+      <article class="productWrapper onSale">
         <ul class="breadcrumb">
           <li><a href="index.html">Home</a></li>
           <li><a href="category.html">Categories</a></li>
@@ -42,7 +42,8 @@
         <h4 class="brand">Brand</h4>
         <h3 class="item_title">Title</h3>
         <div class="sizeAndPrice">
-          <label
+          <div class="sizeAndDiscount">
+            <label
             >Choose a size:
             <select name="size">
               <option>S</option>
@@ -50,34 +51,38 @@
               <option>L</option>
               <option>XL</option>
             </select>
-          </label>
-          <article class="price_area">
-            <div class="price">
+            </label>
+            <div class="discount">-30%</div>
+          </div>
+          <div class="price_area">
+            <p>
               <span>Prev.</span>
-              <h3>0</h3>
+              <span class="price">0</span>
               DKK
-            </div>
+            </p>
             <div class="discounted">
-              Now<span><h3>1</h3></span> DKK
+              <p>
+              Now <span>1</span> DKK
+              
+              </p>
             </div>
-            <button>ADD TO BASKET</button>
-          </article>
-          
-        </div>
+          <button>ADD TO BASKET</button>
+          </div>
+          </div>
         <article class="extra_info">
           <section class="categoryInfo">
             <h3>Category</h3>
             <p class="category">Category</p>
           </section>
-        <section class="colorInfo">
-          <h3>Color</h3>
-          <p>Color</p>
-        </section>
-        <section class="descriptionInfo">
-          <h3>Description</h3>
-          <p>Description text</p>
-        </section>
-        </article>
+          <section class="colorInfo">
+            <h3>Color</h3>
+            <p>Color</p>
+          </section>
+          <section class="descriptionInfo">
+            <h3>Description</h3>
+            <p>Description text</p>
+          </section>
+          </article>
       </section>
     </main>
     <footer></footer>
