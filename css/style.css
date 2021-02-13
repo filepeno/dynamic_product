@@ -11,6 +11,11 @@ body {
   color: #505050;
 }
 
+#logo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+}
+
 .mainNav {
   display: flex;
   flex-direction: row;
