@@ -21,6 +21,8 @@ function handleProductList(data) {
 
 function showItem(item) {
   console.log(item);
+  document.querySelector(".breadcrumb > :last-of-type").textContent =
+    item.category;
   //grab template
   const template = document.querySelector("#templateProduct").content;
   //clone it
