@@ -357,9 +357,14 @@ article.soldOut.productWrapper::before {
   width: 50%;
   border-radius: 1rem;
   padding: 0.5rem 2rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: center;
   align-self: flex-end;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .extra_info {

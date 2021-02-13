@@ -33,6 +33,8 @@ function showProduct(product) {
 
   if (product.soldout) {
     document.querySelector("article.productWrapper").classList.add("soldOut");
+    document.querySelector(".info button").textContent = "SOLD OUT";
+    document.querySelector(".info button").classList.add("disabled");
   }
 
   if (product.discount) {
