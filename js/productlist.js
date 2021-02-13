@@ -1,4 +1,10 @@
-const url = "https://kea-alt-del.dk/t7/api/products?limit=20";
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+console.log(category);
+document.querySelector(".heading").textContent = category;
+
+const url =
+  "https://kea-alt-del.dk/t7/api/products?category=" + category + "&limit=20";
 
 fetch(url)
   .then(function (res) {
@@ -12,32 +18,6 @@ function handleProductList(data) {
   console.log(data);
   data.forEach(showItem);
 }
-
-/* <template id="templateProduct">
-<h1 class="heading">Apparel</h1>
-<section class="productList">
-  <article class="smallProduct">
-    <img
-      src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-      alt="Sahara Team India Fanwear Round Neck Jersey"
-    />
-    <h4 class="brand">Nike</h4>
-    <h3 class="item_title">
-      Sahara Team India Fanwear Round Neck Jersey
-    </h3>
-    <div class="price_area">
-      <div class="price">
-        <span>Prev.</span>
-        <h3>599</h3>
-        DKK
-      </div>
-      <div class="discounted">
-        Now<span> <h3>300</h3></span> DKK
-      </div>
-    </div>
-    <a href="product.html">Read more</a>
-  </article>
-</template> */
 
 function showItem(item) {
   console.log(item);
