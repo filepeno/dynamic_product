@@ -39,7 +39,7 @@ img {
 }
 
 main {
-  margin: 5rem 0;
+  margin: 5vw 0;
 }
 
 .heading {
@@ -53,6 +53,8 @@ ul.breadcrumb {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  max-width: 55%;
+  margin-bottom: 0.5vw;
 }
 
 ul.breadcrumb li + li:before {
@@ -64,6 +66,10 @@ ul.breadcrumb li + li:before {
 ul.breadcrumb li {
   padding-right: 15px;
 }
+
+/* ul.breadcrumb li:last-of-type {
+  text-decoration: underline;
+} */
 
 @media screen and (max-width: 700px) {
   body {
@@ -88,7 +94,8 @@ ul.breadcrumb li {
   }
 
   ul.breadcrumb {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    max-width: 100%;
   }
 }
 
