@@ -32,6 +32,19 @@ a {
   text-decoration: none;
 }
 
+#logo {
+  color: #462aa3;
+}
+
+a:link,
+a:visited {
+  color: #624caa;
+}
+
+a:hover {
+  color: #d347de;
+}
+
 .mainNav :first-child {
   margin-right: auto;
   align-self: flex-start;
