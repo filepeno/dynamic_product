@@ -8,8 +8,11 @@ fetch(url)
   .then((res) => res.json())
   .then((data) => showProduct(data));
 // populate the page
+
 function showProduct(product) {
   console.log(product);
+  document.querySelector(".category").href =
+    "productlist.html?category=" + product.category;
   document.querySelector(".info .brand").textContent = product.brandname;
   document.querySelector(".breadcrumb .item_title").textContent =
     product.productdisplayname;
