@@ -89,6 +89,12 @@ ul.breadcrumb li {
   text-decoration: underline;
 } */
 
+footer {
+  margin-top: 4vw;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 @media screen and (max-width: 700px) {
   body {
     margin: 3rem 4rem;
@@ -112,8 +118,12 @@ ul.breadcrumb li {
   }
 
   ul.breadcrumb {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     max-width: 100%;
+  }
+
+  footer {
+    margin-top: 8vw;
   }
 }
 
@@ -123,6 +133,10 @@ ul.breadcrumb li {
   }
   article.soldOut::before {
     font-size: 0.8rem;
+  }
+
+  footer {
+    margin-top: 10vw;
   }
 }
 
