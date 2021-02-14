@@ -27,26 +27,7 @@
     </header>
     <main>
       <h1 class="heading">Categories</h1>
-      <div class="categoryList">
-        <section class="categoryItem" id="accessoriesBox">
-          <a href="productlist.html?category=Accessories">Accessories</a>
-        </section>
-        <section class="categoryItem" id="apparelBox">
-          <a href="productlist.html?category=Apparel">Apparel</a>
-        </section>
-        <section class="categoryItem" id="footwearBox">
-          <a href="productlist.html?category=Footwear">Footwear</a>
-        </section>
-        <section class="categoryItem" id="freeItemsBox">
-          <a href="productlist.html?category=Free Items">Free Items</a>
-        </section>
-        <section class="categoryItem" id="personalCareBox">
-          <a href="productlist.html?category=Personal Care">Personal Care</a>
-        </section>
-        <section class="categoryItem" id="sportingGoodsBox">
-          <a href="productlist.html?category=Sporting Goods">Sporting Goods</a>
-        </section>
-      </div>
+      <div class="categoryList"></div>
     </main>
     <footer>
       All the images and data on this site comes from <br />
@@ -55,6 +36,11 @@
         >https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a
       >
     </footer>
-    <!-- <script src="js/category.js"></script> -->
+    <script src="js/category.js"></script>
+    <template>
+      <article class="categoryItem">
+        <a href="productlist.html?category=Accessories">*Category*</a>
+      </article>
+    </template>
   </body>
 </html>
