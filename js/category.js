@@ -9,10 +9,19 @@ function gotData(data) {
   data.forEach(showCategory);
 }
 
-function showCategory(category) {
-  console.log(category.category);
+function showCategory(item) {
+  console.log(item.category);
+  // grab
   const template = document.querySelector("template").content;
+  // clone
   const copy = template.cloneNode(true);
+  //change
+  copy.querySelector(
+    "article a"
+  ).href = `productlist.html?category=${item.category}`;
+  copy.querySelector("article a").textContent = `${item.category}`;
+  //grab parent
+  const parent = document.querySelector(".categoryList");
+  //append
+  parent.appendChild(copy);
 }
-
-// grab clone change grab append

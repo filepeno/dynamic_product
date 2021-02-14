@@ -131,27 +131,27 @@ ul.breadcrumb li {
   color: white;
 }
 
-#accessoriesBox {
+.categoryList > :first-child {
   background-color: #85cbd1;
 }
 
-#apparelBox {
+.categoryList > :nth-child(2) {
   background-color: #838cdb;
 }
 
-#footwearBox {
+.categoryList > :nth-child(3) {
   background-color: #cca2f0;
 }
 
-#freeItemsBox {
+.categoryList > :nth-child(4) {
   background-color: #9c77b7;
 }
 
-#personalCareBox {
+.categoryList > :nth-child(5) {
   background-color: #4b4bd5;
 }
 
-#sportingGoodsBox {
+.categoryList > :nth-child(6) {
   background-color: #c045d6;
 }
 
